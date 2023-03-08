@@ -2,9 +2,7 @@ const express = require("express");
 const app = express();
 
 const cors = require("cors");
-app.use(cors( {
-        origin:["http://localhost:3000","https://whatsapp-2n58.onrender.com"]
-}));
+app.use(cors());
 
 const dotEnv = require("dotenv")
 dotEnv.config();
